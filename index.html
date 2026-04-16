@@ -6,109 +6,111 @@
 
 <style>
 body {
-    margin: 0;
-    background: #8B0000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #7a0000, #b30000);
+  color: white;
 }
 
-/* Телефон */
-.phone {
-    width: 320px;
-    height: 650px;
-    background: black;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 0 40px rgba(0,0,0,0.7);
-}
-
-/* Верх */
+/* HEADER */
 .header {
-    color: gold;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-weight: bold;
 }
 
-/* Контент */
-.content {
-    padding: 15px;
+/* PHONE MOCKUP */
+.phone {
+  width: 200px;
+  margin: 20px auto;
 }
 
-/* Карточки */
+.phone img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* CARDS */
 .card {
-    background: linear-gradient(135deg, #a00000, #6b0000);
-    border-radius: 20px;
-    padding: 15px;
-    margin-bottom: 15px;
-    color: white;
-    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+  background: linear-gradient(135deg, #b30000, #ff1a1a);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* Кнопка */
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  opacity: 0.9;
+}
+
 .btn {
-    background: gold;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
-    margin-top: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Нижнее меню */
+/* BOTTOM NAV */
 .nav {
-    position: absolute;
-    bottom: 0;
-    width: 320px;
-    background: #111;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    color: gold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.nav div {
+  color: gold;
 }
 </style>
 
 </head>
+
 <body>
 
+<div class="header">
+  <div>👑 TILBIL</div>
+  <div>🔔</div>
+</div>
+
 <div class="phone">
+  <!-- ТУТ ЛОГО -->
+  <img src="IMG_5467.png">
+</div>
 
-    <div class="header">
-        <div>👑 TILBIL</div>
-        <div>🔔</div>
-    </div>
+<div class="card">
+  <h2>AI-Тьютор</h2>
+  <p>Объясняет тексты простым языком</p>
+  <a href="#" class="btn">Открыть</a>
+</div>
 
-    <div class="content">
+<div class="card">
+  <h2>EduTok Видео</h2>
+  <p>Короткие обучающие видео</p>
+  <a href="#" class="btn">Смотреть</a>
+</div>
 
-        <div class="card">
-            <h3>AI-Тьютор</h3>
-            <p>Объясняет тексты просто</p>
-            <button class="btn">Открыть</button>
-        </div>
+<div class="card">
+  <h2>Справочник</h2>
+  <p>Полезные материалы</p>
+  <a href="#" class="btn">Открыть</a>
+</div>
 
-        <div class="card">
-            <h3>EduTok Видео</h3>
-            <p>Короткие обучающие видео</p>
-            <button class="btn">Смотреть</button>
-        </div>
-
-        <div class="card">
-            <h3>Справочник</h3>
-            <p>Полезные материалы</p>
-            <button class="btn">Открыть</button>
-        </div>
-
-    </div>
-
-    <div class="nav">
-        <div>🏠</div>
-        <div>🔍</div>
-        <div>👤</div>
-    </div>
-
+<div class="nav">
+  <div>🏠</div>
+  <div>🔍</div>
+  <div>👤</div>
 </div>
 
 </body>
