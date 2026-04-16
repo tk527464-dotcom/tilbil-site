@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Мой сайт</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
+<meta charset="UTF-8">
+<title>TILBIL</title>
 
-    h1 {
-      color: gold;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #5a0000, #a00000);
+  color: white;
+}
 
-    .btn {
-      background: gold;
-      color: black;
-      padding: 15px 25px;
-      border-radius: 10px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-    }
-  </style>
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* LOGO */
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+/* CARDS */
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #7a0000, #b30000);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(255,215,0,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 0;
+  color: gold;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+</style>
 </head>
+
 <body>
 
-  <h1>Мой первый сайт 🚀</h1>
-  <p>Я сделал это через GitHub 😎</p>
+<div class="header">
+  <div>👑 TILBIL</div>
+  <div>🔔</div>
+</div>
 
-  <a class="btn" href="#">Кнопка</a>
+<div class="logo">
+  <img src="IMG_5467.png">
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>AI-Тьютор</h3>
+    <p>Объясняет тексты простым языком</p>
+    <button class="btn" onclick="alert('AI запущен')">Открыть</button>
+  </div>
+
+  <div class="card">
+    <h3>EduTok Видео</h3>
+    <p>Короткие обучающие видео</p>
+    <button class="btn" onclick="alert('Видео')">Смотреть</button>
+  </div>
+
+  <div class="card">
+    <h3>Справочник</h3>
+    <p>Полезные материалы</p>
+    <button class="btn" onclick="alert('Справочник')">Открыть</button>
+  </div>
+
+</div>
 
 </body>
 </html>
